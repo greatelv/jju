@@ -1,2 +1,1 @@
-# jju
-portfolio of jju
+JJu's Portfolio Page
