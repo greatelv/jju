@@ -175,7 +175,8 @@ gulp.task('serve', ['scripts', 'styles'], () => {
     //       will present a certificate warning in the browser.
     // https: true,
     server: ['.tmp', 'app'],
-    port: 3000
+    port: 3000,
+    reloadDelay: 1000
   });
 
   gulp.watch(['app/**/*.html'], reload);
