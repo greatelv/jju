@@ -1,4 +1,6 @@
 $(function() {
+
+  
   //Navigation Toggle Event
   $('#toggle').click(function() {
     var elem = $('#nav');
