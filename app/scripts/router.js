@@ -10,15 +10,15 @@ $(function() {
 
   //div scene change handler
   var changeScene = function() {
-    var route = window.location.hash.slice(2);
+    var route = window.location.hash.slice(2).split('/')[0];
     var sections = $('section');
     var section;
 
     section = sections.filter('#'+route);
 
     if (section.length) {
-      sections.hide(250);
-      section.show(250);
+      sections.hide();
+      section.show();
     }
   };
 
@@ -26,7 +26,7 @@ $(function() {
     '/projects': projects,
     '/project/:id': project,
     '/about': about,
-    '/contact': contact
+    '/contact': contact,
   });
 
   router.configure({
@@ -34,6 +34,4 @@ $(function() {
   });
 
   router.init();
-
-
 });
